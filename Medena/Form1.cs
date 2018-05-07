@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Medena.DB;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace Medena
         public Form1()
         {
             InitializeComponent();
+            ConnectionClass.dajArtikle();
         }
+       
     }
 }
