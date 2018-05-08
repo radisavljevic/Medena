@@ -16,7 +16,10 @@ namespace Medena
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            PanelGlavni panelGlavni = new PanelGlavni();
+            Form1 form = new Form1();
+            panelGlavni.ucitajFormu(form);
+            Application.Run(form);
         }
     }
 }

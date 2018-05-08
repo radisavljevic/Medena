@@ -38,7 +38,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\Microsoft SQL Server Compact Edition\v3.5\Desktop\System.Data.SqlServerCe.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -51,15 +51,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DB\ConnectionClass.cs" />
+    <Compile Include="DAO\ArtikalDAO.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kontrole\ucGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Kontrole\ucGrid.Designer.cs">
+      <DependentUpon>ucGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kontrole\ucMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Kontrole\ucMenu.Designer.cs">
+      <DependentUpon>ucMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kontrole\ucTelo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Kontrole\ucTelo.Designer.cs">
+      <DependentUpon>ucTelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kontrole\ucUnosIzmenaArtikla.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Kontrole\ucUnosIzmenaArtikla.Designer.cs">
+      <DependentUpon>ucUnosIzmenaArtikla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Artikal.cs" />
+    <Compile Include="PanelGlavni.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kontrole\ucGrid.resx">
+      <DependentUpon>ucGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kontrole\ucMenu.resx">
+      <DependentUpon>ucMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kontrole\ucUnosIzmenaArtikla.resx">
+      <DependentUpon>ucUnosIzmenaArtikla.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -1,4 +1,5 @@
-﻿using Medena.DB;
+﻿using Medena.DAO;
+using Medena.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,7 +17,14 @@ namespace Medena
         public Form1()
         {
             InitializeComponent();
-            ConnectionClass.dajArtikle();
+            ArtikalDAO artikalDAO = new ArtikalDAO();
+            List<Artikal> listaArtikala = artikalDAO.dajArtikle();
+
+            foreach(Artikal art in listaArtikala)
+            {
+                Console.WriteLine(art.ToString());
+            }
+            
         }
        
     }
