@@ -70,6 +70,12 @@
     <Compile Include="Kontrole\ucMenu.Designer.cs">
       <DependentUpon>ucMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Kontrole\ucStampa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Kontrole\ucStampa.Designer.cs">
+      <DependentUpon>ucStampa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kontrole\ucTelo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,6 +100,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Kontrole\ucMenu.resx">
       <DependentUpon>ucMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kontrole\ucStampa.resx">
+      <DependentUpon>ucStampa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kontrole\ucUnosIzmenaArtikla.resx">
       <DependentUpon>ucUnosIzmenaArtikla.cs</DependentUpon>

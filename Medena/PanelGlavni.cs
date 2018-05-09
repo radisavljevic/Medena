@@ -16,6 +16,7 @@ namespace Medena
         Form1 form1;
         ucGrid ucGrid;
         ucUnosIzmenaArtikla ucUnosIzmenaArtikla;
+        ucStampa ucStampa;
         ucMenu ucMenu = new ucMenu();
         ucTelo ucTelo = new ucTelo();
         FormWindowState fws = new FormWindowState();
@@ -102,6 +103,32 @@ namespace Medena
         }
 
         private void eClickStampaj(object sender, EventArgs e)
+        {
+            if (ucGrid != null)
+            {
+                Artikal artikal = ucGrid.dajObelezeniRed();
+                if (artikal != null)
+                {
+                    ucStampa = new ucStampa();
+                    ucStampa.ucitajParametre(artikal, this);
+                    ucStampa.clickStampajArtikal += new EventHandler(eclickStampajArtikal);
+                    ucStampa.Dock = DockStyle.Fill;
+                    ucTelo.Controls.Add(ucStampa);
+                    ucStampa.BringToFront();
+                }
+                else
+                {
+                    //stampaj sve
+                    MessageBox.Show("Niste obelezili red!!!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Tabela nije ucitana!!!");
+            }
+        }
+
+        private void eclickStampajArtikal(object sender, EventArgs e)
         {
             throw new NotImplementedException();
         }

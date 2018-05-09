@@ -96,7 +96,7 @@ namespace Medena.DAO
                     cmd.Parameters.AddWithValue("@id", id);
                     cn.Open();
                     int rows = cmd.ExecuteNonQuery();
-                    MessageBox.Show("Number of rows deleted: " + rows);
+                    MessageBox.Show("Uspešno obrisan artikal\n\n" + "Number of rows deleted: " + rows);
                 }
             }
             catch (Exception ex)
@@ -122,7 +122,7 @@ namespace Medena.DAO
                         cn.Open();
                         int rows = cmd.ExecuteNonQuery();
 
-                        MessageBox.Show("Number of rows updated: " + rows);
+                        MessageBox.Show("Uspešno update-ovan artikal\n" + "Number of rows updated: " + rows);
                     
                   
                 }
@@ -150,7 +150,7 @@ namespace Medena.DAO
 
                     cn.Open();
                     int rows = cmd.ExecuteNonQuery();
-                    MessageBox.Show("Number of rows inserted: " + rows + "\n " + "Uspesno dodat artikal!");
+                    MessageBox.Show("Uspešno dodat artikal\n" + "Number of rows inserted: " + rows);
                 }
             }
             catch (Exception ex)
