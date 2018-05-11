@@ -41,6 +41,7 @@
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.panelZaStampu = new System.Windows.Forms.Panel();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.panelZaStampu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -155,6 +156,7 @@
             this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
+            this.printPreviewDialog1.Load += new System.EventHandler(this.printPreviewDialog1_Load);
             // 
             // panelZaStampu
             // 
@@ -172,6 +174,10 @@
             this.panelZaStampu.Name = "panelZaStampu";
             this.panelZaStampu.Size = new System.Drawing.Size(378, 399);
             this.panelZaStampu.TabIndex = 9;
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
             // 
             // ucStampa
             // 
@@ -200,5 +206,6 @@
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.Panel panelZaStampu;
+        private System.Windows.Forms.PrintDialog printDialog1;
     }
 }

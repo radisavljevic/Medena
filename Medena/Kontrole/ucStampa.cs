@@ -69,5 +69,10 @@ namespace Medena.Kontrole
             //  new Point(25, 500));
 
         }
+
+        private void printPreviewDialog1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
