@@ -77,11 +77,11 @@
             // 
             // buttonStampaj
             // 
-            this.buttonStampaj.Location = new System.Drawing.Point(36, 395);
+            this.buttonStampaj.Location = new System.Drawing.Point(36, 375);
             this.buttonStampaj.Name = "buttonStampaj";
-            this.buttonStampaj.Size = new System.Drawing.Size(120, 40);
+            this.buttonStampaj.Size = new System.Drawing.Size(120, 55);
             this.buttonStampaj.TabIndex = 4;
-            this.buttonStampaj.Text = "STAMPAJ";
+            this.buttonStampaj.Text = "Priprema za stampu";
             this.buttonStampaj.UseVisualStyleBackColor = true;
             this.buttonStampaj.Click += new System.EventHandler(this.buttonStampaj_Click);
             // 

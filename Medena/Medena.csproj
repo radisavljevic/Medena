@@ -104,6 +104,9 @@
     <EmbeddedResource Include="Kontrole\ucStampa.resx">
       <DependentUpon>ucStampa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Kontrole\ucTelo.resx">
+      <DependentUpon>ucTelo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kontrole\ucUnosIzmenaArtikla.resx">
       <DependentUpon>ucUnosIzmenaArtikla.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +118,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -130,6 +134,9 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\nedeljkovic_logo_4.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

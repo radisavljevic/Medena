@@ -28,10 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.panelTelo = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
+            // 
+            // panelTelo
+            // 
+            this.panelTelo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTelo.Location = new System.Drawing.Point(0, 0);
+            this.panelTelo.Name = "panelTelo";
+            this.panelTelo.Size = new System.Drawing.Size(150, 150);
+            this.panelTelo.TabIndex = 0;
+            // 
+            // ucTelo
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panelTelo);
+            this.Name = "ucTelo";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panelTelo;
     }
 }

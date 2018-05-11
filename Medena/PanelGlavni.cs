@@ -21,6 +21,11 @@ namespace Medena
         ucTelo ucTelo = new ucTelo();
         FormWindowState fws = new FormWindowState();
 
+        public ucTelo dajTelo()
+        {
+            return ucTelo;
+        }
+
         public void ucitajFormu(Form1 forma)
         {
             form1 = forma;
@@ -111,7 +116,7 @@ namespace Medena
                 {
                     ucStampa = new ucStampa();
                     ucStampa.ucitajParametre(artikal, this);
-                    ucStampa.clickStampajArtikal += new EventHandler(eclickStampajArtikal);
+                    //ucStampa.clickStampajArtikal += new EventHandler(eclickStampajArtikal);
                     ucStampa.Dock = DockStyle.Fill;
                     ucTelo.Controls.Add(ucStampa);
                     ucStampa.BringToFront();
